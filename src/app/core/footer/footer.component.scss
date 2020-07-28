@@ -1,0 +1,66 @@
+@import '../../../styles.scss';
+// Footer 
+footer {
+    margin-top: $marginTop;
+    background-color: $textColor;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 3em;
+    color: $footerTextColor;
+    .elem {
+        h3 {
+            color: white
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            a {
+                color: $footerTextColor;
+                text-decoration: none;
+                font-size: 18px;
+                span {
+                    color: $primaryColor;
+                }
+                &:hover {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+    .elem__1 {
+        .text {
+            h1 {
+                color: white;
+                span {
+                    color: $primaryColor;
+                }
+            }
+        }
+        .icons {
+            a {
+                color: rgb(179, 179, 179);
+                &:hover {
+                    color: $primaryColor;
+                }
+                i {
+                    font-size: 40px;
+                    margin-left: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    footer {
+        grid-template-columns: auto;
+    }
+}

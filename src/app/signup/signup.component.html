@@ -1,0 +1,91 @@
+<div class="background">
+    <div class="login">
+        <div class="login__background"></div>
+        <div class="login__form">
+            <div class="login__intro">
+                <div class="data">
+                    <img src="../../assets/img/icon.png" alt="Icon" />
+                    <h6>Education</h6>
+                    <h2>Nice to meet you :)</h2>
+                    <h5>Just register to join with us)</h5>
+                </div>
+            </div>
+
+            <div class="login__info">
+                <header>
+                    <h2>Login</h2>
+                    <a [routerLink]="['/login']" routerLinkActive="router-link-active"><i class="fas fa-arrow-right"></i> Already have account</a
+          >
+        </header>
+        <div class="social-media btn-lg mt-3">
+          <button class="btn btn-facebook text-white">
+            <i class="fab fa-facebook-f"></i> FACEBOOK
+          </button>
+
+          <button class="btn btn-twitter btn-lg text-white">
+            <i class="fab fa-twitter"></i> TWITTER
+          </button>
+
+          <button class="btn btn-google btn-lg text-white">
+            <i class="fab fa-google"></i> GOOGLE
+          </button>
+        </div>
+
+        <div class="center-text mt-5">
+          <p class="text-center">------Or register with email------</p>
+        </div>
+
+        <form>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="Name ?*"
+          />
+
+          <input
+            type="email"
+            class="form-control form-control-lg mt-3"
+            placeholder="Email ?*"
+          />
+
+          <div class="row mt-3">
+            <div class="col">
+              <input
+                type="password"
+                class="form-control form-control-lg"
+                placeholder="Password"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="password"
+                class="form-control form-control-lg"
+                placeholder="Confirm Password"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label">
+                  I have read and accept the Terms of Service & Privacy Policy *
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <button class="btn btn-submit btn-block btn-lg text-white">
+                Continue
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

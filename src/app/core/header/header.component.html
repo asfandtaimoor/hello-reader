@@ -1,0 +1,22 @@
+<header>
+    <!-- Conpany logo -->
+    <div class="logo nav-link">
+        <img src="../../../assets/img/icon.png" alt="">
+    </div>
+
+    <i class="fas fa-bars" id='menuBars' (click)="showMenu()"></i>
+
+
+
+    <nav class="nav" id="navLinks">
+        <i class="fas fa-times" id='menuTimes' (click)="hideMenu()"></i>
+        <a class="nav-link" routerLink="/home" (click)='hideMenu()'>Home</a>
+        <a class="nav-link" routerLink="/about" (click)='hideMenu()'>About</a>
+        <a class="nav-link" routerLink="/services" (click)='hideMenu()'>Contact</a>
+        <a class="nav-link" routerLink="/login" (click)='hideMenu()'>login</a>
+        <a class="nav-link" routerLink="/signup" (click)='hideMenu()'>Signup</a>
+
+
+    </nav>
+
+</header>

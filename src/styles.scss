@@ -1,6 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
-$backgroundColor:rgb(66, 66, 66);
+//Measurement
+$primaryColor: rgb(0, 188, 212);
+$secondaryColor: rgb(255, 139, 20);
+$textColor: rgb(241, 212, 212);
+$marginTop: 5em;
+$footerTextColor: red;
+//Functions
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin hCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin vCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+//
+$backgroundColor: rgb(66, 66, 66);
 body {
     background-color: $backgroundColor;
 }
